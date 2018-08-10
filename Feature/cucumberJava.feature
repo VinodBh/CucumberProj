@@ -22,12 +22,22 @@ Feature: Title of your feature
 
  
       
-	Scenario: Login functionality exists
+	Scenario Outline: Login functionality exists
 	Given I have open the browser
 	When I open Google website
+	And Logged in using "<Uname>" and "<Password>"
 	Then Login button should exits
+	Examples:
+		| Uname | Password |
+		| username1 | password1 |
+		| username2 | password3 |
 	
 	
-	
+	@tag1
+	Scenario: Login functionality exists
+	Given I have open the browser
+	When I open Easy website
+	And Logged in using "Uname" and "Password"
+	Then Login button should exits
 	
 	

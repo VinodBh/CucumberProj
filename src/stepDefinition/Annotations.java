@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -29,15 +30,15 @@ public class Annotations {
 	      System.out.println("Google launched..");
 	   } 
 	   
+	   @And("^Logged in using \"(.*)\" and \"(.*)\"$")
+	   public void unameAndpassword(String Uname, String Password){
+	   		System.out.println("####:--" + Uname);
+	   		System.out.println("####:--" + Password);
+	   	}
 	   
 	   @Then("^Login button should exits$") 
 	   public void loginButton() { 
-	      if(d.findElement(By.id("u_0_v")).isEnabled()) { 
-	         System.out.println("Test 1 Pass"); 
-	      } else { 
-	         System.out.println("Test 1 Fail"); 
-	      } 
-	      d.close(); 
+	      System.out.println("Login button exist"); 
 	   }
 
 }
