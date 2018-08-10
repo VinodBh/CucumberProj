@@ -1,0 +1,91 @@
+1. git init
+2. git add <folderName> ## to add folder OR git add . ## to add all files
+3. git commit -m "commited Demo"
+4. git remote add origin "GIT Path"
+5. git push origin master
+
+update and add new file
+6. git add .
+7. git commit -m "added or modified"
+8. git push origin master
+
+Branch
+
+
+
+
+
+
+
+ @tag1
+  Scenario: Title of your scenario
+    Given I want to write a step with precondition
+    And some other precondition
+    When I complete action
+    And some other action
+    And yet another action
+    Then I validate the outcomes
+    And check more outcomes
+
+  @tag2
+  Scenario Outline: Title of your scenario outline
+    Given I want to write a step with <name>
+    When I check for the <value> in step
+    Then I verify the <status> in step
+
+    Examples: 
+      | name  | value | status  |
+      | name1 |     5 | success |
+      | name2 |     7 | Fail    |
+      
+      
+
+
+
+
+http://mvnrepository.com/artifact/org.testng/testng/6.14.3
+
+
+
+  @tag1
+  Scenario: Title of your scenario
+    Given I want to write a step with precondition
+    And some other precondition
+    When I complete action
+    And some other action
+    And yet another action
+    Then I validate the outcomes
+    And check more outcomes
+
+  @tag2
+  Scenario Outline: Title of your scenario outline
+    Given I want to write a step with <name>
+    When I check for the <value> in step
+    Then I verify the <status> in step
+
+    Examples: 
+      | name  | value | status  |
+      | name1 |     5 | success |
+      | name2 |     7 | Fail    |
+
+
+Jbehave
+CD CI
+
+RESTful api
+GIT
+
+
+https://dzone.com/articles/an-introduction-to-jbehave
+
+
+130
+100
+220
+
+450
+U-45
+
+0U - 080 + 80 + 80
+
+
